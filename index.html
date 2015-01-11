@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Least square method</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/numeric-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div>
+			<p>
+			最小二乗法による多項式の当てはめ．<br />
+			下の枠中にクリックでデータ点追加．右ボタンドラッグでデータ点を移動．<br />
+			赤: 一次式，緑：二次式，青：三次式
+			</p>
+		</div>
+		<div>
+			<input type="button" value="Reset" id="reset" style="margin: 10px;">
+		</div>
+		<div>
+			<canvas id="myCanvas" width="1000" height="600" style="border: solid 1px;" oncontextmenu="return false"></canvas>
+		</div>
+		<div>
+			<h4>参考資料</h4>
+			<ul>
+				<li>金谷，これなら分かる最適化数学，共立出版，2005.</li>
+			</ul>
+		</div>
+	</div>
+	<footer style="text-align: center;">
+		<a href="http://www.sasekazu.info">sasekazu.info</a>
+	</footer>
+</body>
+</html>
